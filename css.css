@@ -2,3 +2,7 @@
     border: 1px solid black;
     display: inline;
 }
+.done{
+    text-decoration: line-through;
+    color: gray;
+}

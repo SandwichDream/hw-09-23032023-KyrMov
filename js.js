@@ -145,7 +145,10 @@ window.onload = () => {
             let btn = document.createElement("button");
             btn.className = "btnCheck";
             btn.id = n0;
-            btn.textContent = "Є";
+            btn.textContent = 'Є';
+            btn.addEventListener("click", () => {
+                div.classList.add("done");
+            });
             div.textContent = `${n0}. ${inpBonus.value} | ${getDayInfo()} | `;
             divBonus.appendChild(div);
             div.appendChild(btn);
